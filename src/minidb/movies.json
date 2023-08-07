@@ -1,0 +1,630 @@
+[
+  {
+    "id": 1,
+    "name": "Xtra Xtra",
+    "poster": "https://i3.ytimg.com/vi/DScEPC_5L7c/maxresdefault.jpg",
+    "category": "DOCUMENTARY",
+    "episodes": [
+      {
+        "name": "EP XX",
+        "url": "https://youtu.be/Ur0L9aKNXiI",
+        "groups": ["XG"]
+      },
+      {
+        "name": "EP X1",
+        "url": "https://youtu.be/DScEPC_5L7c",
+        "groups": ["XG"]
+      },
+      {
+        "name": "EP X2",
+        "url": "https://youtu.be/iknYiMrAUpc",
+        "groups": ["XG"]
+      },
+      {
+        "name": "EP X3",
+        "url": "https://youtu.be/1YDcFoJN-zU",
+        "groups": ["XG"]
+      },
+      {
+        "name": "EP X4",
+        "url": "https://youtu.be/FNjIabd_YoQ",
+        "groups": ["XG"]
+      },
+      {
+        "name": "Highlights (EP X1-4) + BONUS CLIP",
+        "url": "https://youtu.be/ZhDZ1Qfi4ZY",
+        "groups": ["XG"]
+      },
+      {
+        "name": "EP X5",
+        "url": "https://youtu.be/viD36LaVD-g",
+        "groups": ["XG"]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "The World Is My Oyster",
+    "poster": "https://i3.ytimg.com/vi/mjcJOJkNPRw/maxresdefault.jpg",
+    "category": "DOCUMENTARY",
+    "trailer": "https://youtu.be/oAYeb3WKtwY",
+    "episodes": [
+      {
+        "name": "Episode 1",
+        "url": "https://youtu.be/mjcJOJkNPRw",
+        "groups": ["LE_SSERAFIM"]
+      },
+      {
+        "name": "Episode 2",
+        "url": "https://youtu.be/XaT-GYHTTEM",
+        "groups": ["LE_SSERAFIM"]
+      },
+      {
+        "name": "Episode 3",
+        "url": "https://youtu.be/d93epoeYqbk",
+        "groups": ["LE_SSERAFIM"]
+      },
+      {
+        "name": "Episode 4",
+        "url": "https://youtu.be/dlfPeToWoJY",
+        "groups": ["LE_SSERAFIM"]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Leniverse",
+    "poster": "https://i3.ytimg.com/vi/47NKup8ReRY/maxresdefault.jpg",
+    "category": "VARIETY",
+    "episodes": [
+      {
+        "name": "EP.1",
+        "url": "https://youtu.be/47NKup8ReRY",
+        "groups": ["LE_SSERAFIM", "TESTE"]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "category": "XG_THREE_MEALS",
+    "episodes": [
+      {
+        "name": "EP.1",
+        "poster": "https://i3.ytimg.com/vi/MM2rVoXrpRs/maxresdefault.jpg",
+        "url": "https://youtu.be/MM2rVoXrpRs",
+        "groups": ["XG"]
+      },
+      {
+        "name": "EP.2",
+        "poster": "https://i3.ytimg.com/vi/3Bm55QKvyag/maxresdefault.jpg",
+        "url": "https://youtu.be/3Bm55QKvyag",
+        "groups": ["XG"]
+      },
+      {
+        "name": "EP.3",
+        "poster": "https://i3.ytimg.com/vi/JRtEGiafPRc/maxresdefault.jpg",
+        "url": "https://youtu.be/JRtEGiafPRc",
+        "groups": ["XG"]
+      },
+      {
+        "name": "EP.4",
+        "poster": "https://i3.ytimg.com/vi/wGWkHI5R3vs/maxresdefault.jpg",
+        "url": "https://youtu.be/wGWkHI5R3vs",
+        "groups": ["XG"]
+      },
+      {
+        "name": "EP.5",
+        "poster": "https://i3.ytimg.com/vi/gxnC9xd71lI/maxresdefault.jpg",
+        "url": "https://youtu.be/gxnC9xd71lI",
+        "groups": ["XG"]
+      },
+      {
+        "name": "EP.6",
+        "poster": "https://i3.ytimg.com/vi/UwTIA5vNNMY/maxresdefault.jpg",
+        "url": "https://youtu.be/UwTIA5vNNMY",
+        "groups": ["XG"]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "category": "IDOLS_PHYSICAL_RACE",
+    "episodes": [
+      {
+        "name": "EP.1",
+        "poster": "https://i3.ytimg.com/vi/zuVlFVWRHWI/maxresdefault.jpg",
+        "url": "https://youtu.be/zuVlFVWRHWI",
+        "groups": ["LE_SSERAFIM"]
+      },
+      {
+        "name": "EP.5-1",
+        "poster": "https://i3.ytimg.com/vi/FQwpgvYVhuY/maxresdefault.jpg",
+        "url": "https://youtu.be/FQwpgvYVhuY",
+        "groups": ["NEW_JEANS"]
+      },
+      {
+        "name": "EP.5-2",
+        "poster": "https://i3.ytimg.com/vi/X3vPzcHJgTY/maxresdefault.jpg",
+        "url": "https://youtu.be/X3vPzcHJgTY",
+        "groups": ["NEW_JEANS"]
+      },
+      {
+        "name": "EP.5-3",
+        "poster": "https://i3.ytimg.com/vi/WuyF9424pPE/maxresdefault.jpg",
+        "url": "https://youtu.be/WuyF9424pPE",
+        "groups": ["NEW_JEANS"]
+      },
+      {
+        "name": "EP.4",
+        "poster": "https://i3.ytimg.com/vi/uEZh0SMVakk/maxresdefault.jpg",
+        "url": "https://youtu.be/uEZh0SMVakk",
+        "groups": ["BILLLIE"]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "category": "RECORDING",
+    "episodes": [
+      {
+        "name": "POP!",
+        "poster": "https://i3.ytimg.com/vi/L9iJJEooqjI/maxresdefault.jpg",
+        "url": "https://youtu.be/L9iJJEooqjI"
+      },
+      {
+        "name": "Checkmate (Sneakers)",
+        "poster": "https://i3.ytimg.com/vi/1-D7AobvmW4/maxresdefault.jpg",
+        "url": "https://youtu.be/1-D7AobvmW4"
+      },
+      {
+        "name": "After Like",
+        "poster": "https://i3.ytimg.com/vi/ISYUgT6Kh58/maxresdefault.jpg",
+        "url": "https://youtu.be/ISYUgT6Kh58"
+      },
+      {
+        "name": "Nxde",
+        "poster": "https://i3.ytimg.com/vi/F8p3RR37naI/maxresdefault.jpg",
+        "url": "https://youtu.be/F8p3RR37naI"
+      },
+      {
+        "name": "Ditto & OMG",
+        "poster": "https://i3.ytimg.com/vi/Mn5ZzRZ9yto/hqdefault.jpg",
+        "url": "https://youtu.be/Mn5ZzRZ9yto"
+      },
+      {
+        "name": "Shooting Star",
+        "poster": "https://i3.ytimg.com/vi/o4PFe13WdUw/maxresdefault.jpg",
+        "url": "https://youtu.be/o4PFe13WdUw"
+      },
+      {
+        "name": "Young, Dumb, Stupid",
+        "poster": "https://i3.ytimg.com/vi/IemFgVvDanY/maxresdefault.jpg",
+        "url": "https://youtu.be/IemFgVvDanY"
+      },
+      {
+        "name": "Love Me Like This",
+        "poster": "https://i3.ytimg.com/vi/PMDN4iE2uJo/maxresdefault.jpg",
+        "url": "https://youtu.be/PMDN4iE2uJo"
+      },
+      {
+        "name": "Welcome to MY World",
+        "poster": "https://i3.ytimg.com/vi/vGwLHGBi_D4/hqdefault.jpg",
+        "url": "https://youtu.be/vGwLHGBi_D4"
+      },
+      {
+        "name": "Spicy",
+        "poster": "https://i3.ytimg.com/vi/j8S8wmVKhr4/maxresdefault.jpg",
+        "url": "https://youtu.be/j8S8wmVKhr4"
+      },
+      {
+        "name": "Queencard",
+        "poster": "https://i3.ytimg.com/vi/wg7AL7inFTE/maxresdefault.jpg",
+        "url": "https://youtu.be/wg7AL7inFTE"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "category": "KILLING_VOICE",
+    "episodes": [
+      {
+        "name": "MAMAMOO",
+        "poster": "https://i3.ytimg.com/vi/WvkTcNQsxzc/maxresdefault.jpg",
+        "url": "https://youtu.be/WvkTcNQsxzc"
+      },
+      {
+        "name": "Punch",
+        "poster": "https://i3.ytimg.com/vi/exCn38p8bGs/maxresdefault.jpg",
+        "url": "https://youtu.be/exCn38p8bGs"
+      },
+      {
+        "name": "IU",
+        "poster": "https://i3.ytimg.com/vi/wDfqXR_5yyQ/maxresdefault.jpg",
+        "url": "https://youtu.be/wDfqXR_5yyQ"
+      },
+      {
+        "name": "Ailee",
+        "poster": "https://i3.ytimg.com/vi/5GrKuaXBg4k/maxresdefault.jpg",
+        "url": "https://youtu.be/5GrKuaXBg4k"
+      },
+      {
+        "name": "Big Mama",
+        "poster": "https://i3.ytimg.com/vi/OsRogAzmsF8/maxresdefault.jpg",
+        "url": "https://youtu.be/OsRogAzmsF8"
+      },
+      {
+        "name": "Baek Z Young",
+        "poster": "https://i3.ytimg.com/vi/uQElREKRP_I/maxresdefault.jpg",
+        "url": "https://youtu.be/uQElREKRP_I"
+      },
+      {
+        "name": "KwonJinAh",
+        "poster": "https://i3.ytimg.com/vi/5ePKBm4spBg/maxresdefault.jpg",
+        "url": "https://youtu.be/5ePKBm4spBg"
+      },
+      {
+        "name": "WAX",
+        "poster": "https://i3.ytimg.com/vi/YIM_Cl30wzs/maxresdefault.jpg",
+        "url": "https://youtu.be/YIM_Cl30wzs"
+      },
+      {
+        "name": "LeeHi",
+        "poster": "https://i3.ytimg.com/vi/hr2xGbc6jO0/maxresdefault.jpg",
+        "url": "https://youtu.be/hr2xGbc6jO0"
+      },
+      {
+        "name": "Baek A Yeon",
+        "poster": "https://i3.ytimg.com/vi/Vesf60s1Srg/maxresdefault.jpg",
+        "url": "https://youtu.be/Vesf60s1Srg"
+      },
+      {
+        "name": "Kassy",
+        "poster": "https://i3.ytimg.com/vi/XK4030cO0ko/maxresdefault.jpg",
+        "url": "https://youtu.be/XK4030cO0ko"
+      },
+      {
+        "name": "Younha",
+        "poster": "https://i3.ytimg.com/vi/P8lxQ-1oM1I/maxresdefault.jpg",
+        "url": "https://youtu.be/P8lxQ-1oM1I"
+      },
+      {
+        "name": "LYN",
+        "poster": "https://i3.ytimg.com/vi/0vvCe4EHtus/maxresdefault.jpg",
+        "url": "https://youtu.be/0vvCe4EHtus"
+      },
+      {
+        "name": "Jung-in",
+        "poster": "https://i3.ytimg.com/vi/mMwsjQ0PfJM/maxresdefault.jpg",
+        "url": "https://youtu.be/mMwsjQ0PfJM"
+      },
+      {
+        "name": "Taeyeon",
+        "poster": "https://i3.ytimg.com/vi/5ch94AaPZRQ/maxresdefault.jpg",
+        "url": "https://youtu.be/5ch94AaPZRQ"
+      },
+      {
+        "name": "Suran",
+        "poster": "https://i3.ytimg.com/vi/MnEa3idwsos/maxresdefault.jpg",
+        "url": "https://youtu.be/MnEa3idwsos"
+      },
+      {
+        "name": "BOL4",
+        "poster": "https://i3.ytimg.com/vi/u_nc-t4oHfw/maxresdefault.jpg",
+        "url": "https://youtu.be/u_nc-t4oHfw"
+      },
+      {
+        "name": "Hyolin",
+        "poster": "https://i3.ytimg.com/vi/Vpromp90G4g/maxresdefault.jpg",
+        "url": "https://youtu.be/Vpromp90G4g"
+      },
+      {
+        "name": "Cheeze",
+        "poster": "https://i3.ytimg.com/vi/fyDz91HDt4g/maxresdefault.jpg",
+        "url": "https://youtu.be/fyDz91HDt4g"
+      },
+      {
+        "name": "Lena Park",
+        "poster": "https://i3.ytimg.com/vi/REPZc2nzlyw/maxresdefault.jpg",
+        "url": "https://youtu.be/REPZc2nzlyw"
+      },
+      {
+        "name": "Kim Na Young",
+        "poster": "https://i3.ytimg.com/vi/45Vey0yUylc/maxresdefault.jpg",
+        "url": "https://youtu.be/45Vey0yUylc"
+      },
+      {
+        "name": "EXID",
+        "poster": "https://i3.ytimg.com/vi/U8M8LNnWMzk/maxresdefault.jpg",
+        "url": "https://youtu.be/U8M8LNnWMzk"
+      },
+      {
+        "name": "Anne-Marie",
+        "poster": "https://i3.ytimg.com/vi/SAzUYWru-w0/maxresdefault.jpg",
+        "url": "https://youtu.be/SAzUYWru-w0"
+      },
+      {
+        "name": "KARA",
+        "poster": "https://i3.ytimg.com/vi/VNYEHXsehTg/maxresdefault.jpg",
+        "url": "https://youtu.be/VNYEHXsehTg"
+      },
+      {
+        "name": "Jeong Eun Ji",
+        "poster": "https://i3.ytimg.com/vi/Tgh8S6OQRrI/maxresdefault.jpg",
+        "url": "https://youtu.be/Tgh8S6OQRrI"
+      },
+      {
+        "name": "HYNN",
+        "poster": "https://i3.ytimg.com/vi/u9-ISLtq1g0/maxresdefault.jpg",
+        "url": "https://youtu.be/u9-ISLtq1g0"
+      },
+      {
+        "name": "Stella Jang",
+        "poster": "https://i3.ytimg.com/vi/YbLXavSS-iI/maxresdefault.jpg",
+        "url": "https://youtu.be/YbLXavSS-iI"
+      },
+      {
+        "name": "BYUL",
+        "poster": "https://i3.ytimg.com/vi/n1GwrrQL6O0/maxresdefault.jpg",
+        "url": "https://youtu.be/n1GwrrQL6O0"
+      },
+      {
+        "name": "Kim Jong Seo",
+        "poster": "https://i3.ytimg.com/vi/pRKqQqHRGGI/maxresdefault.jpg",
+        "url": "https://youtu.be/pRKqQqHRGGI"
+      },
+      {
+        "name": "Park Ki Young",
+        "poster": "https://i3.ytimg.com/vi/DQK2geMTHtU/maxresdefault.jpg",
+        "url": "https://youtu.be/DQK2geMTHtU"
+      },
+      {
+        "name": "Song Sohee",
+        "poster": "https://i3.ytimg.com/vi/6KKIo4-6jh8/maxresdefault.jpg",
+        "url": "https://youtu.be/6KKIo4-6jh8"
+      },
+      {
+        "name": "Navi",
+        "poster": "https://i3.ytimg.com/vi/18JE_nDsZGY/maxresdefault.jpg",
+        "url": "https://youtu.be/18JE_nDsZGY"
+      },
+      {
+        "name": "Apink",
+        "poster": "https://i3.ytimg.com/vi/tJGunpmi2wo/maxresdefault.jpg",
+        "url": "https://youtu.be/tJGunpmi2wo"
+      },
+      {
+        "name": "SOYOU",
+        "poster": "https://i3.ytimg.com/vi/tJGunpmi2wo/maxresdefault.jpg",
+        "url": "https://youtu.be/tJGunpmi2wo"
+      },
+      {
+        "name": "(G)I-dle",
+        "poster": "https://i3.ytimg.com/vi/et3VDbL7cIA/maxresdefault.jpg",
+        "url": "https://youtu.be/et3VDbL7cIA"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "We Can Do It",
+    "poster": "https://i3.ytimg.com/vi/fix1GJ6vTWA/maxresdefault.jpg",
+    "category": "VARIETY",
+    "trailer": "https://youtu.be/fix1GJ6vTWA",
+    "episodes": [
+      {
+        "name": "EP.01",
+        "url": "https://youtu.be/5nTk0f4FMMw"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Weekly Idol",
+    "poster": "https://i3.ytimg.com/vi/gNU-PMRcVjs/maxresdefault.jpg",
+    "category": "VARIETY",
+    "episodes": [
+      {
+        "name": "EP614",
+        "url": "https://youtu.be/gNU-PMRcVjs"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "SUMfactory",
+    "poster": "https://i3.ytimg.com/vi/V5yasRI7m5U/maxresdefault.jpg",
+    "category": "VARIETY",
+    "trailer": "https://youtu.be/V5yasRI7m5U",
+    "episodes": [
+      {
+        "name": "EP. 01",
+        "url": "https://youtu.be/zMXmhfehROk"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Cherry On Air",
+    "poster": "https://i3.ytimg.com/vi/X87o6zslGP0/maxresdefault.jpg",
+    "category": "VARIETY",
+    "episodes": [
+      {
+        "name": "EP.1",
+        "url": "https://youtu.be/u5pkU18uHeU"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Kep1er-unner",
+    "poster": "https://i3.ytimg.com/vi/Bef1GltcNWk/maxresdefault.jpg",
+    "category": "VARIETY",
+    "episodes": [
+      {
+        "name": "EP.1",
+        "url": "https://youtu.be/Bef1GltcNWk"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "category": "QUEENDOM_PUZZLE",
+    "trailer": "https://youtu.be/DDb8WIKngQA",
+    "episodes": [
+      {
+        "name": "Charismatic - PICK on the top",
+        "poster": "https://i3.ytimg.com/vi/ZO3fNQhVEDo/maxresdefault.jpg",
+        "url": "https://youtu.be/ZO3fNQhVEDo"
+      },
+      {
+        "name": "SNAP - PICK-A-CAT",
+        "poster": "https://i3.ytimg.com/vi/PjyF5789Kxc/maxresdefault.jpg",
+        "url": "https://youtu.be/PjyF5789Kxc"
+      },
+      {
+        "name": "Charismatic - DROP The Beat",
+        "poster": "https://i3.ytimg.com/vi/4QZu2LyemL4/maxresdefault.jpg",
+        "url": "https://youtu.be/4QZu2LyemL4"
+      },
+      {
+        "name": "SNAP - Athena",
+        "poster": "https://i3.ytimg.com/vi/Timpnus81h0/maxresdefault.jpg",
+        "url": "https://youtu.be/Timpnus81h0"
+      },
+      {
+        "name": "First meeting with the queens",
+        "poster": "https://i3.ytimg.com/vi/Y0B_1rx4f4g/maxresdefault.jpg",
+        "url": "https://youtu.be/Y0B_1rx4f4g"
+      },
+      {
+        "name": "RISE UP",
+        "poster": "https://i3.ytimg.com/vi/sdFmfVRAobo/maxresdefault.jpg",
+        "url": "https://youtu.be/sdFmfVRAobo"
+      },
+      {
+        "name": "Teaser Shoot Behind",
+        "poster": "https://i3.ytimg.com/vi/2AOArVsoIu4/maxresdefault.jpg",
+        "url": "https://youtu.be/2AOArVsoIu4"
+      },
+      {
+        "name": "RISE UP Behind",
+        "poster": "https://i3.ytimg.com/vi/DyOvV3xUXGs/maxresdefault.jpg",
+        "url": "https://youtu.be/DyOvV3xUXGs"
+      },
+      {
+        "name": "Up-Down Battle Results Behind",
+        "poster": "https://i3.ytimg.com/vi/S7cXCpK4CSM/maxresdefault.jpg",
+        "url": "https://youtu.be/S7cXCpK4CSM"
+      },
+      {
+        "name": "First Puzzle Behind",
+        "poster": "https://i3.ytimg.com/vi/L8lcPvxvQ8M/maxresdefault.jpg",
+        "url": "https://youtu.be/L8lcPvxvQ8M"
+      },
+      {
+        "name": "Charismatic PICK team performance reaction",
+        "poster": "https://i3.ytimg.com/vi/55EFBcxBYNM/maxresdefault.jpg",
+        "url": "https://youtu.be/55EFBcxBYNM"
+      },
+      {
+        "name": "Charismatic DROP team performance reaction",
+        "poster": "https://i3.ytimg.com/vi/TNsaAVRwEsU/maxresdefault.jpg",
+        "url": "https://youtu.be/TNsaAVRwEsU"
+      },
+      {
+        "name": "SNAP PICK team performance reaction",
+        "poster": "https://i3.ytimg.com/vi/ijbB5nDgXcs/maxresdefault.jpg",
+        "url": "https://youtu.be/ijbB5nDgXcs"
+      },
+      {
+        "name": "SNAP DROP team performance reaction",
+        "poster": "https://i3.ytimg.com/vi/azH5cqdKhRc/maxresdefault.jpg",
+        "url": "https://youtu.be/azH5cqdKhRc"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Cignature is on",
+    "poster": "https://i3.ytimg.com/vi/fS93M5YWtCU/maxresdefault.jpg",
+    "category": "VARIETY",
+    "episodes": [
+      {
+        "name": "Episode.1",
+        "url": "https://youtu.be/fS93M5YWtCU"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "The Silence Of IDOL",
+    "poster": "https://i3.ytimg.com/vi/muttupBkGTg/maxresdefault.jpg",
+    "category": "VARIETY",
+    "episodes": [
+      {
+        "name": "IZ*ONE - Panorama",
+        "url": "https://youtu.be/hz6pEaYeHXI"
+      },
+      {
+        "name": "STAYC - ASAP",
+        "url": "https://youtu.be/b4lXflyjHb0"
+      },
+      {
+        "name": "OH MY GIRL - Dun Dun Dance",
+        "url": "https://youtu.be/Beb8PVP2XvA"
+      },
+      {
+        "name": "Brave Girls - Chi Mat Ba Ram",
+        "url": "https://youtu.be/bZHwqjM3l64"
+      },
+      {
+        "name": "LOONA - PTT",
+        "url": "https://youtu.be/GL5y6MjFEVo"
+      },
+      {
+        "name": "Weeekly - Holiday Party",
+        "url": "https://youtu.be/DPreRRBoRbc"
+      },
+      {
+        "name": "STAYC - Stereotype",
+        "url": "https://youtu.be/tpFMTJGPcl4"
+      },
+      {
+        "name": "Billlie - Snowy Night",
+        "url": "https://youtu.be/kikPpnTXanM"
+      },
+      {
+        "name": "Kep1er - WA DA DA",
+        "url": "https://youtu.be/GmwYL1RAHqI"
+      },
+      {
+        "name": "Viviz - BOP BOP!",
+        "url": "https://youtu.be/jx2XB65NTYk"
+      },
+      {
+        "name": "(G)I-DLE - Tomboy",
+        "url": "https://youtu.be/muttupBkGTg"
+      },
+      {
+        "name": "fromis_9 - Stay This Way",
+        "url": "https://youtu.be/38pWTs8LV1Q"
+      },
+      {
+        "name": "NIMXX - DICE",
+        "url": "https://youtu.be/hGsY-uE6xHg"
+      },
+      {
+        "name": "LE SSERAFIM - ANTIFRAGILE",
+        "url": "https://youtu.be/-XnydjqlWyo"
+      },
+      {
+        "name": "NMIXX - Love Me Like This",
+        "url": "https://youtu.be/FMfE272a2JY"
+      },
+      {
+        "name": "IVE - I AM",
+        "url": "https://youtu.be/TvglmVKXEPo"
+      }
+    ]
+  }
+]

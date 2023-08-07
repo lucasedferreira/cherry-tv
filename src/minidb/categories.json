@@ -1,0 +1,10 @@
+[
+  { "id": 2, "name": "QUEENDOM_PUZZLE", "description": "Queendom Puzzle", "type": "COMPILATION" },
+  { "id": 3, "name": "KILLING_VOICE", "description": "Killing Voice", "type": "COMPILATION" },
+  { "id": 4, "name": "RECORDING", "description": "Recording Behind", "type": "COMPILATION" },
+  { "id": 5, "name": "IDOLS_PHYSICAL_RACE", "description": "Idol's Physical Race", "type": "SERIE" },
+  { "id": 6, "name": "XG_THREE_MEALS", "description": "XG's three meals a day", "type": "SERIE" },
+  { "id": 7, "name": "VARIETY", "description": "Shows de Variedades" },
+  { "id": 8, "name": "DOCUMENTARY", "description": "Documentários" },
+  { "id": 1, "name": "VLOGS", "description": "Vlogs", "split_by_groups": true }
+]
