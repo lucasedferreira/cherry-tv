@@ -17,7 +17,7 @@
           <MovieCard
             :category="category"
             :movie="movie"
-            @click="showDetail(movie)"
+            @click="openModal(movie)"
           />
         </Slide>
 
@@ -85,7 +85,7 @@ export default {
         this.showLoading = false;
       }
     },
-    showDetail(movie) {
+    openModal(movie) {
       const [div] = this.$refs[movie.id || movie.url];
       const { top, left } = div.getBoundingClientRect();
       this.modalStartPosition = {

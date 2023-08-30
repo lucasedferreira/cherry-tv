@@ -207,10 +207,12 @@ export default {
   justify-content: center;
   align-items: flex-start;
   width: 100%;
+  text-align: left;
 
   &__header {
     position: relative;
     z-index: 2;
+    line-height: 50px;
 
     .close-button {
       display: flex;
@@ -266,10 +268,10 @@ export default {
       position: absolute;
       width: 100%;
       bottom: 45px;
-      padding: 0 83px;
+      padding: 0 50px;
 
       &__title {
-        font-size: 50px;
+        font-size: 45px;
         font-family: Kanit;
         color: #fff;
         display: flex;

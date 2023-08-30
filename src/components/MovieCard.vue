@@ -30,65 +30,63 @@ export default {
   justify-content: center;
   align-items: center;
   transition: all 0.5s ease;
+  .movie_poster__image {
+    width: inherit;
+    transition: all 0.5s ease;
+  }
+  &:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+    .movie_poster__title {
+      opacity: 1;
+    }
+    .overlay {
+      opacity: 1;
+    }
+  }
+  .movie_poster__title {
+    transition: all 0.5s ease;
+    opacity: 0;
+    font-size: 22px;
+    position: absolute;
+    z-index: 1;
+    left: 25px;
+    bottom: 10px;
+  }
 }
-
-.overlay::before {
-  content: "";
-  display: block;
-  position: absolute;
-  opacity: 0;
-  border-bottom: #141414;
-  height: 0%;
-  width: 100%;
-  bottom: 2px;
-  background: linear-gradient(to bottom, transparent 0%, #141414 100%);
-  // background-color: white;
-  transition: all .3s ease-in-out;
+.overlay {
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    opacity: 0;
+    border-bottom: #141414;
+    height: 0%;
+    width: 100%;
+    bottom: 2px;
+    background: linear-gradient(to bottom, transparent 0%, #141414 100%);
+    // background-color: white;
+    transition: all 0.3s ease-in-out;
+  }
+  &:hover {
+    &:before {
+      opacity: 1;
+      height: 50%;
+      bottom: -2px;
+    }
+  }
 }
-
-.overlay:hover:before {
-  opacity: 1;
-  height: 50%;
-  bottom: -2px;
-}
-
-.movie_poster .movie_poster__image {
-  width: inherit;
-  transition: all 0.5s ease;
-}
-
-.movie_poster:hover {
-  transform: scale(1.02);
-  cursor: pointer;
-}
-
-.movie_poster .movie_poster__title {
-  transition: all 0.5s ease;
-  opacity: 0;
-  font-size: 22px;
-  position: absolute;
-  z-index: 1;
-  left: 25px;
-  bottom: 10px;
-}
-
-.movie_poster:hover .movie_poster__title {
-  opacity: 1;
-}
-
-.movie_poster:hover .overlay {
-  opacity: 1;
-}
-
 @media only screen and (max-width: 599px) {
   .movie_poster__image {
     height: 150px;
     width: 100px;
   }
-  #moviesList h1 {
-    font-size: 15px;
-    margin-bottom: 5px;
-    margin-top: 5px;
+  #moviesList {
+    h1 {
+      font-size: 15px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
   }
 }
 </style>
