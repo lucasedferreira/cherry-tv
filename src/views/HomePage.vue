@@ -15,12 +15,12 @@
 </template>
 
 <script>
-import NextRelease from "../components/NextRelease";
-import MoviesList from "../components/MoviesList";
-import { Categories } from "../services/MovieCategory";
+import NextRelease from "@/components/NextRelease";
+import MoviesList from "@/components/MoviesList";
+import { Categories } from "@/services/MovieCategory";
 
 export default {
-  name: "App",
+  name: "HomePage",
   components: {
     NextRelease,
     MoviesList,

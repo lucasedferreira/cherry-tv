@@ -56,7 +56,7 @@
 </template>
 
 <script>
-import image from "../assets/logo-small.png";
+import image from "@/assets/logo-small.png";
 // import Icon from "vue-awesome/components/Icon";
 export default {
   name: "MainHeader",

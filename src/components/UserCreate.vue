@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import { createUser } from "@/firebase";
+import { createUser } from "@/services/User";
 import { reactive } from "vue";
 
 export default {

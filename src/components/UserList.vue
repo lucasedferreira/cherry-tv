@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import { useLoadUsers, deleteUser } from "@/firebase";
+import { useLoadUsers, deleteUser } from "@/services/User";
 
 export default {
   setup() {
