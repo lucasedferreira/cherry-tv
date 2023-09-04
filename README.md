@@ -21,6 +21,10 @@ The main goal of this project is to demonstrate my ability to create a user-frie
 -   **Custom Styling:** Designing a visually appealing interface that enhances the viewing experience.
 -   **Responsive Design:** Ensuring a consistent experience across various devices.
 
+## Project Roadmap
+
+To keep track of project progress and prioritize features, I've created a Trello board. You can view and participate in the project's development by visiting the Trello board [here](https://trello.com/invite/b/fq6Q8Rc8/ATTI17e04a72c159294be1195984bfbb6498A33CCB1A/cherry-tv).
+
 ## Prerequisites
 Before you begin, make sure you have the following:
 
