@@ -1,16 +1,16 @@
 <template>
-  <div class="main">
-    <div class="main__header">
+  <div class="home-content">
+    <div class="home-content__header">
       <NextRelease />
     </div>
-    <div class="main__body">
+    <div class="home-content__body">
       <MoviesList
         :key="category.id"
         :category="category"
         v-for="category in categories"
       />
     </div>
-    <h4 class="main__footer">CherryTV</h4>
+    <h4 class="home-content__footer">CherryTV</h4>
   </div>
 </template>
 
@@ -33,8 +33,8 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-.main {
+<style lang="scss">
+.home-content {
   &__header {
     position: relative;
     z-index: -1;
@@ -55,7 +55,7 @@ export default {
   }
 }
 @media only screen and (max-width: 599px) {
-  .main h4 {
+  .home-content h4 {
     font-size: 14px;
   }
 }

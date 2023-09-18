@@ -18,22 +18,3 @@ export default {
   },
 };
 </script>
-
-<style>
-* {
-  font-family: Kanit, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  margin: 0;
-  padding: 0;
-  outline: 0;
-  box-sizing: border-box;
-}
-body {
-  background-color: #141414;
-  height: 100vh;
-}
-.scroll-disabled {
-  position: fixed;
-  width: 100%;
-  overflow-y: scroll;
-}
-</style>
