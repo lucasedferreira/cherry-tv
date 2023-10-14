@@ -4,6 +4,7 @@ import LoginPage from "./views/LoginPage";
 import HomePage from "./views/HomePage";
 import AboutMe from "./views/AboutMe";
 import AboutEdit from "./views/AboutEdit";
+import VideoRegister from "./views/VideoRegister";
 
 const routes = [
   {
@@ -25,6 +26,11 @@ const routes = [
     path: "/about/:id",
     name: "AboutEdit",
     component: AboutEdit,
+  },
+  {
+    path: "/video-register",
+    name: "VideoRegister",
+    component: VideoRegister,
   },
 ];
 

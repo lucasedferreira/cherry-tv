@@ -8,30 +8,12 @@
       style="width: 150px"
     />
     <nav role="navigation">
-      <ul>
+      <ul class="options">
         <li id="selections">
           <a id="navigate">
             Navegar
-            <!-- <v-icon name="sort-down" scale="1" color="#e5e5e5" /> -->
             sla
           </a>
-          <ul class="dropdown">
-            <li @click="navigateHome">
-              <a>Início</a>
-            </li>
-            <li>
-              <a>Filmes</a>
-            </li>
-            <li>
-              <a>Séries</a>
-            </li>
-            <li>
-              <a>Mais recentes</a>
-            </li>
-            <li @click="navigateMyList">
-              <a>Minha lista</a>
-            </li>
-          </ul>
         </li>
         <li class="items" @click="onScroll">Início</li>
         <li class="items">Séries</li>
@@ -41,15 +23,8 @@
         <li></li>
       </ul>
     </nav>
-    <!-- <div id="textForm">
-      <form>
-        <input type="text" name="text" placeholder="Títulos, gente e gêneros" />
-      </form>
-    </div> -->
-    <div id="icons">
-      <!-- <v-icon name="bell" scale="1.3" color="#e5e5e5" />? -->
+    <div class="icons">
       sininho
-      <!-- <v-icon name="user-circle" scale="2" color="#e5e5e5" /> -->
       perfil
     </div>
   </div>
@@ -67,9 +42,6 @@ export default {
       isScrollOnTop: true
     };
   },
-  // components: {
-  //   "v-icon": Icon,
-  // },
   mounted() {
     this.checkScroll();
   },
@@ -136,12 +108,12 @@ nav {
   display: flex;
   align-items: center;
 }
-ul {
+.options {
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
-li {
+.options li {
   color: #fff;
   display: block;
   float: left;
@@ -152,70 +124,17 @@ li {
   font-family: Kanit, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 13.5px;
 }
-li a {
+.options li a {
   color: #fff;
   cursor: default;
 }
-li:hover {
+.options li:hover {
   cursor: pointer;
 }
 .items:hover {
   color: #ccc;
 }
-ul li ul {
-  visibility: hidden;
-  opacity: 0;
-  min-width: 5rem;
-  position: absolute;
-  transition: all 0.5s ease;
-  margin-top: 1rem;
-  left: 0;
-  display: none;
-}
-ul li ul li {
-  clear: both;
-  width: 100%;
-}
-.dropdown {
-  background: #141414c7;
-}
-#navigate {
-  opacity: 0;
-  height: 0;
-}
-#options {
-  font-size: 14px;
-  color: #e5e5e5;
-  cursor: pointer;
-  width: 60%;
-}
-#eachOptions {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  width: 50%;
-}
-input[type="text"] {
-  width: 1px;
-  border: none;
-  color: #e5e5e5;
-  border-bottom: 2px solid #ccc;
-  font-size: 13px;
-  background-color: #141414;
-  background-image: url("../assets/search.png");
-  background-position: 10px 10px;
-  background-repeat: no-repeat;
-  padding: 12px 7px 12px 40px;
-  -webkit-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
-}
-input[type="text"]:focus {
-  width: 100%;
-}
-#textForm {
-  width: 15%;
-}
-#icons {
+.icons {
   width: 10%;
   display: flex;
   justify-content: space-around;
@@ -224,46 +143,6 @@ input[type="text"]:focus {
 @media only screen and (max-width: 906px) {
   nav {
     width: 80vw;
-  }
-}
-@media only screen and (max-width: 900px) {
-  ul li:hover > ul,
-  ul li:focus-within > ul,
-  ul li ul:hover {
-    visibility: visible;
-    opacity: 1;
-    display: block;
-    font-size: 15px;
-    position: absolute;
-    z-index: 5000;
-  }
-  li :hover {
-    color: #ccc;
-  }
-  #navigate {
-    color: white;
-    opacity: 10;
-    height: auto;
-    margin-left: -10px;
-  }
-  .items {
-    opacity: 0;
-    height: 0;
-    font-size: 0;
-  }
-  li a {
-    cursor: pointer;
-  }
-  nav {
-    width: 30%;
-    height: 30px;
-    padding-top: 3px;
-  }
-  #textForm {
-    width: 30%;
-  }
-  #icons {
-    width: 20%;
   }
 }
 @media only screen and (max-width: 626px) {
