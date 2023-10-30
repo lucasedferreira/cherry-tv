@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const config = {
-  apiKey: "AIzaSyASxKOHUaPkzTAr_FS3A_0Bccb2_ekoGuc",
-  authDomain: "cherry-tv-49ee4.firebaseapp.com",
-  projectId: "cherry-tv-49ee4",
-  storageBucket: "cherry-tv-49ee4.appspot.com",
-  messagingSenderId: "192687650014",
-  appId: "1:192687650014:web:fa964fea58b0583209be4f",
-  measurementId: "G-TXHH7Y5GSH",
+  apiKey: "AIzaSyCHMGnDh2A-_dXFGZfNFwV5gLnV9Sm46MA",
+  authDomain: "choerry-tv.firebaseapp.com",
+  projectId: "choerry-tv",
+  storageBucket: "choerry-tv.appspot.com",
+  messagingSenderId: "820876449359",
+  appId: "1:820876449359:web:1d656c772d93a43f68bc3a",
+  measurementId: "G-7MSDSD54MD"
 };
 
 const firebaseApp = initializeApp(config);
