@@ -40,7 +40,7 @@ export default {
         this.$router.push({ name: "Home" });
       } else {
         await createUser({email: this.email});
-        localStorage.setItem('tutorial', 1);
+        localStorage.setItem('tutorial', "firstVideo");
         this.$router.push({ name: "VideoRegister" });
       }
     }

@@ -41,8 +41,17 @@ const router = createRouter({
 
 router.beforeEach((to, from, next) => {
   const isLogged = "id" in User;
-  if (to.name !== "Login" && !isLogged) next({ name: "Login" });
-  else next();
+  if (to.name !== "Login" && !isLogged) {
+    next({ name: "Login" });
+    return;
+  }
+
+  if (to.name !== "VideoRegister" && isLogged && localStorage.getItem('tutorial') === "firstVideo") {
+    next({ name: "VideoRegister" });
+    return;
+  }
+
+  next();
 });
 
 export default router;

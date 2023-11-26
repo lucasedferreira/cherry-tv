@@ -80,23 +80,27 @@
         />
       </div>
     </div>
-    <div class="row mt-3">
+    <!-- <div class="row mt-3">
       <div class="col-12">
         <label for="description" class="form-label">Thumbnail</label>
         <img :src="video.thumbnail" />
       </div>
-    </div>
+    </div> -->
+    <button class="btn btn-danger mt-3" @click="create" :disabled="loading">Create</button>
   </div>
 </template>
 
 <script>
 import VueMultiselect from "vue-multiselect";
 import { getVideoDataByCode } from "@/services/Youtube";
+import { createVideo } from "@/services/Video";
+import { getTagByName, createTag } from "@/services/Tag";
 
 export default {
   components: { VueMultiselect },
   data() {
     return {
+      loading: false,
       video: {
         url: "",
         ytId: "",
@@ -105,8 +109,8 @@ export default {
         channelId: "",
         description: "",
         thumbnail: "",
-        tags: [],
-        groups: [],
+        tags: "",
+        groups: "",
       },
       placeholder: {},
       selectedTags: [],
@@ -182,7 +186,7 @@ export default {
           ytVideo.snippet.thumbnails.high.url,
         channelId: ytVideo.snippet.channelId,
         channelTitle: ytVideo.snippet.channelTitle,
-        description: ytVideo.snippet.description,
+        description: ytVideo.snippet.description
       };
     },
     addTag(newTag) {
@@ -207,6 +211,24 @@ export default {
         this.$refs.groupsSelect.activate();
       }, 5);
     },
+    async create() {
+      this.loading = true;
+      let video = JSON.parse(JSON.stringify(this.video));
+
+      video.tags = [];
+      for (const tag of this.selectedTags) {
+        let tagModel = await getTagByName(tag.name);
+        if (!tagModel) tagModel = await createTag({name: tag.name});
+        video.tags.push(tagModel.id);
+      }
+
+      await createVideo(video);
+
+      if (localStorage.getItem('tutorial') === 'firstVideo')
+        localStorage.removeItem('firstVideo');
+
+      this.$router.push({ name: "Home" });
+    }
   },
 };
 </script>
@@ -218,5 +240,8 @@ export default {
 }
 .language-json {
   color: white;
+}
+.btn-danger {
+  background-color: transparent;
 }
 </style>
