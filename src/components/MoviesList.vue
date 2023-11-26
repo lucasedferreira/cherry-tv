@@ -1,8 +1,8 @@
 <template>
-  <div id="moviesList" v-if="movies">
+  <div id="videosList" v-if="videos && videos.length > 0">
     <div id="slide">
-      <h1>{{ category.description }}</h1>
-      <div v-show="showLoading" id="loadingMovie">
+      <h1>{{ tag.name }}</h1>
+      <div v-show="showLoading" id="loadingVideo">
         <!-- <Spinner /> -->
         carregando
       </div>
@@ -12,12 +12,11 @@
         :items-to-scroll="howManyPostersToShow()"
         :snap-align="'start'"
       >
-        <Slide :key="movie.id" v-for="movie in movies">
-          <div :ref="movie.id || movie.url"></div>
-          <MovieCard
-            :category="category"
-            :movie="movie"
-            @click="openModal(movie)"
+        <Slide :key="video.id" v-for="video in videos">
+          <div :ref="video.id || video.url"></div>
+          <VideoCard
+            :video="video"
+            @click="openModal(video)"
           />
         </Slide>
 
@@ -27,7 +26,7 @@
       </Carousel>
     </div>
     <MovieModal
-      :movie="selectedMovie"
+      :video="selectedVideo"
       :startTop="modalStartPosition.top"
       :startLeft="modalStartPosition.left"
     />
@@ -37,33 +36,34 @@
 <script>
 import "vue3-carousel/dist/carousel.css";
 import { Carousel, Navigation, Slide } from "vue3-carousel";
-import MovieCard from "@/components/MovieCard";
+import VideoCard from "@/components/VideoCard";
 import MovieModal from "@/components/MovieModal";
 
-import { Movies } from "@/services/Movie";
+import { getVideosByTag } from "@/services/Video";
+
 export default {
   name: "MovieList",
   data() {
     return {
-      movies: [],
+      videos: [],
       showLoading: true,
       paginationButtons: false,
-      selectedMovie: null,
+      selectedVideo: null,
       modalStartPosition: {},
     };
   },
   props: {
-    category: Object,
+    tag: Object,
   },
   components: {
     Carousel,
     Slide,
     Navigation,
-    MovieCard,
+    VideoCard,
     MovieModal,
   },
   mounted() {
-    this.getMovies();
+    this.getVideos();
   },
   methods: {
     howManyPostersToShow() {
@@ -74,28 +74,30 @@ export default {
       if (window.innerWidth <= 2560) return 6;
       return 4;
     },
-    getMovies() {
+    async getVideos() {
       this.showLoading = true;
       try {
-        const movies = Movies(this.category);
-        this.movies = movies;
+        const videos = await getVideosByTag(this.tag.id);
+        console.log('videos', videos)
+        this.videos = videos;
       } catch (error) {
         console.error(error);
       } finally {
         this.showLoading = false;
       }
     },
-    openModal(movie) {
-      const [div] = this.$refs[movie.id || movie.url];
+    openModal(video) {
+      const [div] = this.$refs[video.id || video.url];
       const { top, left } = div.getBoundingClientRect();
       this.modalStartPosition = {
         top: top + "px",
         left: left + "px",
       };
-      this.selectedMovie = movie;
+
+      this.selectedVideo = video;
     },
     closeModal() {
-      this.selectedMovie = null;
+      this.selectedVideo = null;
       document.body.style.overflow = "visible";
     },
   },
@@ -110,14 +112,14 @@ export default {
   margin: auto;
 }
 
-#moviesList {
+#videosList {
   width: 100%;
   height: 100%;
   text-align: center;
   margin: auto;
 }
 
-#moviesList h1 {
+#videosList h1 {
   color: #e5e5e5;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 22px;
@@ -132,7 +134,7 @@ export default {
   margin-bottom: 20px;
 }
 
-#loadingMovie {
+#loadingVideo {
   display: flex;
   justify-content: center;
   align-items: center;

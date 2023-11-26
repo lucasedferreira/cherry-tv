@@ -1,8 +1,8 @@
 <template>
-  <div class="modale" v-if="movie" @click.self="$parent.closeModal()">
-    <div class="movie-modal">
-      <div class="movie-modal__header">
-        <img class="image" :src="movie.poster" />
+  <div class="modale" v-if="video" @click.self="$parent.closeModal()">
+    <div class="video-modal">
+      <div class="video-modal__header">
+        <img class="image" :src="video.thumbnail" />
         <div class="image-overlay"></div>
         <button
           type="button"
@@ -29,9 +29,9 @@
         </button>
 
         <div class="content">
-          <div class="content__title">{{ movie.name }}</div>
+          <div class="content__title">{{ video.title }}</div>
           <div class="content__buttons">
-            <button type="button" class="play" @click="openMovie(movie)">
+            <button type="button" class="play" @click="openVideo(video)">
               <svg
                 width="24"
                 height="24"
@@ -66,27 +66,30 @@
         </div>
       </div>
 
-      <div class="movie-modal__body">
-        <div class="movie-modal__body--first">
-          testetestetestetestetestetesteteste testetesteteste
-          testetestetestetestetestetestetestetesteteste testeteste teste
-          testetestetestetestetestetestetestetesteteste testetesteteste
+      <div class="video-modal__body">
+        <div class="video-modal__body--first">
+          {{ video.description }}
         </div>
-        <div class="movie-modal__body--second">
-          <div class="groups" v-if="movie.groups && movie.groups.length > 0">
+        <div class="video-modal__body--second">
+          <div class="groups" v-if="video.groups && video.groups.length > 0">
             <span class="title"
-              >Group{{ movie.groups.length > 1 ? "s" : "" }}:</span
+              >Group{{ video.groups.length > 1 ? "s" : "" }}:</span
             >
             <span
               class="sub-title"
               :key="i"
-              v-for="(group, i) in movie.groups"
+              v-for="(group, i) in video.groups"
               >{{ group }}</span
             >
           </div>
-          <div class="genres">
+          <div class="genres" v-if="video.loadedTags">
             <span class="title">Genres:</span>
-            <span class="sub-title">{{ movie.category }}</span>
+            <span
+              class="sub-title"
+              v-for="tag in video.loadedTags"
+              :key="tag.id"
+              >{{ tag.name }}</span
+            >
           </div>
         </div>
       </div>
@@ -98,20 +101,19 @@
 export default {
   name: "MovieModal",
   props: {
-    movie: Object,
+    video: Object,
     startTop: String,
     startLeft: String,
   },
-  mounted() {
+  async mounted() {
     window.addEventListener("keyup", (event) => {
-      if (this.selectedMovie === null) return;
+      if (this.selectedVideo === null) return;
       if (event.key === "Escape") this.$parent.closeModal();
     });
   },
   methods: {
-    openMovie(movie) {
-      const url = movie.url || movie.episodes[0].url;
-      window.open(url);
+    openVideo(video) {
+      window.open(video.url);
     },
   },
 };
@@ -191,7 +193,7 @@ export default {
   z-index: 1;
 }
 
-.movie-modal {
+.video-modal {
   position: fixed;
   z-index: 9999;
   animation-name: open-modal;
@@ -356,7 +358,7 @@ export default {
 
     &--first {
       width: 100%;
-      font-size: 25px;
+      font-size: 16px;
       padding-right: 40px;
     }
 

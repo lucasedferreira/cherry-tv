@@ -1,27 +1,21 @@
 <template>
-  <div
-    class="movie_poster"
-    v-bind:class="[{ overlay: category?.type !== 'SERIE' }]"
-  >
-    <span class="movie_poster__title" v-if="category?.type !== 'SERIE'">{{
-      movie.name
-    }}</span>
-    <img :src="movie.poster" class="movie_poster__image" loading="lazy" />
+  <div class="video_poster overlay">
+    <span class="video_poster__title">{{ video.title }}</span>
+    <img :src="video.thumbnail" class="video_poster__image" loading="lazy" />
   </div>
 </template>
 
 <script>
 export default {
-  name: "MovieCard",
+  name: "VideoCard",
   props: {
-    category: Object,
-    movie: Object,
+    video: Object,
   },
 };
 </script>
 
 <style lang="scss" scoped>
-.movie_poster {
+.video_poster {
   border-radius: 5px;
   width: 365px;
   height: 185px;
@@ -30,21 +24,22 @@ export default {
   justify-content: center;
   align-items: center;
   transition: all 0.5s ease;
-  .movie_poster__image {
+  .video_poster__image {
     width: inherit;
     transition: all 0.5s ease;
   }
   &:hover {
     transform: scale(1.02);
     cursor: pointer;
-    .movie_poster__title {
+    .video_poster__title {
       opacity: 1;
     }
     .overlay {
       opacity: 1;
     }
   }
-  .movie_poster__title {
+  .video_poster__title {
+    color: white;
     transition: all 0.5s ease;
     opacity: 0;
     font-size: 22px;
@@ -77,7 +72,7 @@ export default {
   }
 }
 @media only screen and (max-width: 599px) {
-  .movie_poster__image {
+  .video_poster__image {
     height: 150px;
     width: 100px;
   }

@@ -5,9 +5,9 @@
     </div>
     <div class="home-content__body">
       <MoviesList
-        :key="category.id"
-        :category="category"
-        v-for="category in categories"
+        :key="tag.id"
+        :tag="tag"
+        v-for="tag in tags"
       />
     </div>
     <h4 class="home-content__footer">CherryTV</h4>
@@ -17,7 +17,7 @@
 <script>
 import NextRelease from "@/components/NextRelease";
 import MoviesList from "@/components/MoviesList";
-import { Categories } from "@/services/MovieCategory";
+import { getTags } from "@/services/Tag";
 
 export default {
   name: "HomePage",
@@ -25,11 +25,13 @@ export default {
     NextRelease,
     MoviesList,
   },
-  computed: {
-    categories() {
-      return Categories();
-    },
+  data() {
+    return {tags: []}
   },
+  async mounted() {
+    const userId = JSON.parse(localStorage.getItem('user')).id;
+    this.tags = await getTags(userId);
+  }
 };
 </script>
 

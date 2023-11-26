@@ -1,8 +1,8 @@
 import { db } from "@/firebase";
 import {
   collection,
-  // doc,
-  // getDoc,
+  doc,
+  getDoc,
   addDoc,
   // updateDoc,
   // deleteDoc,
@@ -11,6 +11,21 @@ import {
   getDocs,
   query,
 } from "firebase/firestore";
+
+export const getTag = async (tagId) => {
+  const userId = JSON.parse(localStorage.getItem('user')).id;
+  const tagCollection = doc(db, `users/${userId}/tags`, tagId);
+  const tag = await getDoc(tagCollection);
+  return tag.exists() ? tag.data() : null;
+};
+
+export const getTags = async (userId) => {
+  const tagCollection = collection(db, `users/${userId}/tags`);
+  const tags = await getDocs(tagCollection);
+  return tags.empty
+    ? []
+    : tags.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
+};
 
 export const getTagByName = async (name) => {
   const userId = JSON.parse(localStorage.getItem('user')).id;
