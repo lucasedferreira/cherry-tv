@@ -4,28 +4,21 @@
     <img
       class="logoHeader"
       :src="image"
-      @click="navigateHome"
-      style="width: 150px"
+      @click="navigateTo('Home')"
     />
     <nav role="navigation">
       <ul class="options">
-        <li id="selections">
-          <a id="navigate">
-            Navegar
-            sla
-          </a>
-        </li>
-        <li class="items" @click="onScroll">Início</li>
-        <li class="items">Séries</li>
-        <li class="items">Filmes</li>
+        <li class="items" @click="navigateTo('Home')">Início</li>
+        <li class="items" @click="navigateTo('VideoRegister')">Cadastrar Vídeo</li>
+        <!-- <li class="items">Filmes</li>
         <li class="items">Mais recentes</li>
-        <li class="items" @click="navigateMyList">Minha lista</li>
+        <li class="items" @click="navigateMyList">Minha lista</li> -->
         <li></li>
       </ul>
     </nav>
     <div class="icons">
-      sininho
-      perfil
+      <!-- sininho -->
+      <span @click="logout()">Logout</span>
     </div>
   </div>
 </template>
@@ -64,17 +57,19 @@ export default {
         }
       };
     },
-    navigateHome() {
-      this.$router.push({ name: "Home" });
+    navigateTo(page) {
+      this.$router.push({ name: page });
     },
-    navigateMyList() {
-      this.$router.push({ name: "MyList" });
-    },
+    logout() {
+      localStorage.removeItem('user');
+      localStorage.removeItem('tutorial');
+      this.$router.push({ name: "Login" });
+    }
   },
 };
 </script>
 
-<style>
+<style scoped>
 #header {
   width: 100%;
   height: 70px;
@@ -83,7 +78,6 @@ export default {
   align-items: center;
   z-index: 9999;
   background: linear-gradient(to bottom, #141414d5 0%, transparent 100%);
-  
 }
 .default-background {
   transition: opacity .4s ease-in;
@@ -97,13 +91,15 @@ export default {
   background: #141414;
 }
 .logoHeader {
+  height: 70px;
+  width: min-content;
   margin-left: 30px;
 }
 .logoHeader:hover {
   cursor: pointer;
 }
 nav {
-  width: 70vw;
+  width: 100%;
   color: white;
   display: flex;
   align-items: center;
@@ -135,7 +131,11 @@ nav {
   color: #ccc;
 }
 .icons {
-  width: 10%;
+  color: white;
+  font-size: 13.5px;
+  margin-right: 30px;
+  cursor: pointer;
+  width: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
