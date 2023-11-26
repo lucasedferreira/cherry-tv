@@ -25,7 +25,8 @@ export const setUser = async (user) => {
 };
 
 export const createUser = async (user) => {
-  const newUser = await addDoc(usersCollection, user);
+  await addDoc(usersCollection, user);
+  const newUser = await getUserByEmail(user.email);
   setUser(newUser);
   return newUser;
 };
