@@ -95,6 +95,7 @@ import VueMultiselect from "vue-multiselect";
 import { getVideoDataByCode } from "@/services/Youtube";
 import { createVideo } from "@/services/Video";
 import { getTagByName, createTag } from "@/services/Tag";
+import { getGroupByName, createGroup } from "@/services/Group";
 
 export default {
   components: { VueMultiselect },
@@ -220,6 +221,13 @@ export default {
         let tagModel = await getTagByName(tag.name);
         if (!tagModel) tagModel = await createTag({name: tag.name});
         video.tags.push(tagModel.id);
+      }
+
+      video.groups = [];
+      for (const group of this.selectedGroups) {
+        let groupModel = await getGroupByName(group.name);
+        if (!groupModel) groupModel = await createGroup({name: group.name});
+        video.groups.push(groupModel.id);
       }
 
       await createVideo(video);

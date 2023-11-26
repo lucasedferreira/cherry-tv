@@ -78,7 +78,6 @@ export default {
       this.showLoading = true;
       try {
         const videos = await getVideosByTag(this.tag.id);
-        console.log('videos', videos)
         this.videos = videos;
       } catch (error) {
         console.error(error);

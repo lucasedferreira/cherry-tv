@@ -12,6 +12,7 @@ import {
   query,
 } from "firebase/firestore";
 import { getTag } from "@/services/Tag";
+import { getGroup } from "@/services/Group";
 
 export const createVideo = async (video) => {
   const userId = JSON.parse(localStorage.getItem("user")).id;
@@ -30,13 +31,25 @@ export const getVideosByTag = async (tagId) => {
 
     let parsedVideos = [];
     for (const doc of videos.docs) {
+      const video = doc.data();
+
       let loadedTags = [];
-      for (const tagId of doc.data().tags) {
-        const tagModel = await getTag(tagId);
-        loadedTags.push(tagModel);
+      if ('tags' in video) {
+        for (const tagId of video.tags) {
+          const tagModel = await getTag(tagId);
+          loadedTags.push(tagModel);
+        }
       }
 
-      parsedVideos.push({ id: doc.id, loadedTags, ...doc.data() });
+      let loadedGroups = [];
+      if ('groups' in video) {
+        for (const groupId of video.groups) {
+          const groupModel = await getGroup(groupId);
+          loadedGroups.push(groupModel);
+        }
+      }
+
+      parsedVideos.push({ id: doc.id, loadedTags, loadedGroups, ...video });
     }
 
     return parsedVideos;

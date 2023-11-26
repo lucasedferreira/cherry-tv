@@ -3,7 +3,6 @@ import axios from "axios";
 const client = axios.create();
 
 client.interceptors.request.use((config) => {
-  console.log("entrou");
   const baseUrl = "https://www.googleapis.com/youtube/v3";
   const authToken = process.env.VUE_APP_YOUTUBE_TOKEN;
   config.url = baseUrl + config.url.concat(`&key=${authToken}`);

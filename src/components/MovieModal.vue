@@ -77,9 +77,9 @@
             >
             <span
               class="sub-title"
-              :key="i"
-              v-for="(group, i) in video.groups"
-              >{{ group }}</span
+              :key="group.id"
+              v-for="group in video.loadedGroups"
+              >{{ group.name }}</span
             >
           </div>
           <div class="genres" v-if="video.loadedTags">
