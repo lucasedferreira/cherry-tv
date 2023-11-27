@@ -71,9 +71,9 @@
           {{ video.description }}
         </div>
         <div class="video-modal__body--second">
-          <div class="groups" v-if="video.groups && video.groups.length > 0">
+          <div class="groups" v-if="video.loadedGroups && video.loadedGroups.length > 0">
             <span class="title"
-              >Group{{ video.groups.length > 1 ? "s" : "" }}:</span
+              >Group{{ video.loadedGroups.length > 1 ? "s" : "" }}:</span
             >
             <span
               class="sub-title"
