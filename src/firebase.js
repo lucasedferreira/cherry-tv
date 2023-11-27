@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const config = {
-  apiKey: "AIzaSyCHMGnDh2A-_dXFGZfNFwV5gLnV9Sm46MA",
+  apiKey: process.env.VUE_APP_FIREBASE_API_KEY,
   authDomain: "choerry-tv.firebaseapp.com",
   projectId: "choerry-tv",
   storageBucket: "choerry-tv.appspot.com",
