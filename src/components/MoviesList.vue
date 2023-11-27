@@ -3,7 +3,6 @@
     <div id="slide">
       <h1>{{ tag.name }}</h1>
       <div v-show="showLoading" id="loadingVideo">
-        <!-- <Spinner /> -->
         carregando
       </div>
       <Carousel

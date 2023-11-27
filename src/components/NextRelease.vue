@@ -46,7 +46,6 @@ export default {
   width: 100%;
   height: 700px;
   position: relative;
-  /* background: #1414147e; */
   background: linear-gradient(to bottom, #14141450 60%, #141414 100%);;
   display: flex;
   align-items: center;
@@ -65,8 +64,6 @@ export default {
   position: absolute;
   top: 50%;
   left: 50%;
-  /* -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); */
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
@@ -91,7 +88,6 @@ export default {
   text-align: justify;
 }
 .containerReleases button {
-  border: none;
   background: rgba(78, 78, 78, 0.562);
   color: #e9e9e9;
   font-size: 15px;

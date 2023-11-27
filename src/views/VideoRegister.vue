@@ -80,12 +80,6 @@
         />
       </div>
     </div>
-    <!-- <div class="row mt-3">
-      <div class="col-12">
-        <label for="description" class="form-label">Thumbnail</label>
-        <img :src="video.thumbnail" />
-      </div>
-    </div> -->
     <button class="btn btn-danger mt-3" @click="create" :disabled="loading">Create</button>
   </div>
 </template>

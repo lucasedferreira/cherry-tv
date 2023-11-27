@@ -60,7 +60,6 @@ export default {
     width: 100%;
     bottom: 2px;
     background: linear-gradient(to bottom, transparent 0%, #141414 100%);
-    // background-color: white;
     transition: all 0.3s ease-in-out;
   }
   &:hover {
