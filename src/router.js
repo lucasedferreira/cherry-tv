@@ -2,8 +2,6 @@ import { createWebHistory, createRouter } from "vue-router";
 import { User } from "@/services/User";
 import LoginPage from "./views/LoginPage";
 import HomePage from "./views/HomePage";
-import AboutMe from "./views/AboutMe";
-import AboutEdit from "./views/AboutEdit";
 import VideoRegister from "./views/VideoRegister";
 
 const routes = [
@@ -16,16 +14,6 @@ const routes = [
     path: "/",
     name: "Home",
     component: HomePage,
-  },
-  {
-    path: "/about",
-    name: "About",
-    component: AboutMe,
-  },
-  {
-    path: "/about/:id",
-    name: "AboutEdit",
-    component: AboutEdit,
   },
   {
     path: "/video-register",
