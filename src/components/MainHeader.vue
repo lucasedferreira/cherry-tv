@@ -10,14 +10,10 @@
       <ul class="options">
         <li class="items" @click="navigateTo('Home')">Início</li>
         <li class="items" @click="navigateTo('VideoRegister')">Cadastrar Vídeo</li>
-        <!-- <li class="items">Filmes</li>
-        <li class="items">Mais recentes</li>
-        <li class="items" @click="navigateMyList">Minha lista</li> -->
         <li></li>
       </ul>
     </nav>
     <div class="icons">
-      <!-- sininho -->
       <span @click="logout()">Logout</span>
     </div>
   </div>
@@ -25,7 +21,7 @@
 
 <script>
 import image from "@/assets/logo-small.png";
-// import Icon from "vue-awesome/components/Icon";
+
 export default {
   name: "MainHeader",
   data() {
