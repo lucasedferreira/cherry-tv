@@ -17,7 +17,7 @@
       </ul>
     </nav>
     <div class="icons">
-      <!-- teste sonar -->
+      <!-- teste sonar 2 -->
       <span @click="logout()">Logout</span>
     </div>
   </div>
