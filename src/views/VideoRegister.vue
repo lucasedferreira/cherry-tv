@@ -222,9 +222,6 @@ export default {
 
       await createVideo(video);
 
-      if (localStorage.getItem('tutorial') === 'firstVideo')
-        localStorage.removeItem('firstVideo');
-
       this.$router.push({ name: "Home" });
     }
   },

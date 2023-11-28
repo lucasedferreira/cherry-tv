@@ -34,11 +34,6 @@ router.beforeEach((to, from, next) => {
     return;
   }
 
-  if (to.name !== "VideoRegister" && isLogged && localStorage.getItem('tutorial') === "firstVideo") {
-    next({ name: "VideoRegister" });
-    return;
-  }
-
   next();
 });
 
