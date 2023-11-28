@@ -46,7 +46,7 @@
           tag-placeholder="Add this as new tag"
           placeholder="Search or add a tag"
           label="name"
-          track-by="code"
+          track-by="id"
           :options="tagsOptions"
           :multiple="true"
           :taggable="true"
@@ -61,7 +61,7 @@
           tag-placeholder="Add this as new group"
           placeholder="Search or add a group"
           label="name"
-          track-by="code"
+          track-by="id"
           :options="groupsOptions"
           :multiple="true"
           :taggable="true"
@@ -88,8 +88,8 @@
 import VueMultiselect from "vue-multiselect";
 import { getVideoDataByCode } from "@/services/Youtube";
 import { createVideo } from "@/services/Video";
-import { getTagByName, createTag } from "@/services/Tag";
-import { getGroupByName, createGroup } from "@/services/Group";
+import { getTags, getTagByName, createTag } from "@/services/Tag";
+import { getGroups, getGroupByName, createGroup } from "@/services/Group";
 
 export default {
   components: { VueMultiselect },
@@ -109,20 +109,16 @@ export default {
       },
       placeholder: {},
       selectedTags: [],
-      tagsOptions: [
-        { name: "Vlogs", code: "vlg" },
-        { name: "Stages", code: "stg" },
-        { name: "MVs", code: "mvs" },
-      ],
+      tagsOptions: [],
       selectedGroups: [],
-      groupsOptions: [
-        { name: "Le Sserafim", code: "lsf" },
-        { name: "Woo!Ah!", code: "wow" },
-        { name: "NewJeans", code: "nwj" },
-      ],
+      groupsOptions: [],
     };
   },
-  mounted() {
+  async mounted() {
+    const userId = JSON.parse(localStorage.getItem('user')).id;
+    this.tagsOptions = await getTags(userId);
+    this.groupsOptions = await getGroups(userId);
+
     const videosToPlaceholder = [
       {
         url: "https://www.youtube.com/watch?v=C3GouGa0noM",
@@ -187,7 +183,7 @@ export default {
     addTag(newTag) {
       const tag = {
         name: newTag,
-        code: newTag.substring(0, 2) + Math.floor(Math.random() * 10000000),
+        id: newTag.substring(0, 2) + Math.floor(Math.random() * 10000000),
       };
       this.tagsOptions.push(tag);
       this.selectedTags.push(tag);
@@ -198,7 +194,7 @@ export default {
     addGroup(newGroup) {
       const group = {
         name: newGroup,
-        code: newGroup.substring(0, 2) + Math.floor(Math.random() * 10000000),
+        id: newGroup.substring(0, 2) + Math.floor(Math.random() * 10000000),
       };
       this.groupsOptions.push(group);
       this.selectedGroups.push(group);

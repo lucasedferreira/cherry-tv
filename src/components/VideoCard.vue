@@ -47,6 +47,11 @@ export default {
     z-index: 1;
     left: 25px;
     bottom: 10px;
+    overflow: hidden;
+    text-align: start;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    width: 270px;
   }
 }
 .overlay {
