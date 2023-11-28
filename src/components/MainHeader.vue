@@ -58,7 +58,6 @@ export default {
     },
     logout() {
       localStorage.removeItem('user');
-      localStorage.removeItem('tutorial');
       this.$router.push({ name: "Login" });
     }
   },
