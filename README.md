@@ -10,6 +10,9 @@ This project showcases my frontend development skills by creating an enhanced st
  - Project Roadmap
  - Data Modeling
  - Technology Stack
+ - GitHub Actions
+ - Sonar
+ - Monitoring
  - Prerequisites
  - Installation and Usage
  
@@ -40,6 +43,29 @@ This project was developed using the following technologies:
 - Vue 3
 - Firebase
 - GitHub Actions
+- SonarCloud
+- BetterStack
+
+## GitHub Actions
+The pipelines run as follows:
+1. Tests and Lint when a MR is created
+2. Deploy when a PR is merged
+![image](https://github.com/lucasedferreira/cherry-tv/assets/37189868/4acb746e-44be-4d21-bf14-bdf62cb9b3f4)
+
+
+## Sonar
+To ensure the code quality, SonarCloud has been implemented.
+![image](https://github.com/lucasedferreira/cherry-tv/assets/37189868/bced0942-f27a-42cc-8f7e-013fdbc4d68b)
+A analysis is run every Pull Request and it is blocked when one or more code smell or bug is detected.
+![image](https://github.com/lucasedferreira/cherry-tv/assets/37189868/055fcd8c-2595-45f6-a354-ad1b7452bf94)
+
+
+## Monitoring
+The Firebase Hosting has a feature that shows the usage of the app.
+![image](https://github.com/lucasedferreira/cherry-tv/assets/37189868/01645be7-74bb-4224-9243-9abc3d7ea130)
+However, to really monitor and check the website health, the tool [BetterStack](https://uptime.betterstack.com/) has been used. Better Stack lets you see inside any stack, debug any issue, and resolve any incident.
+![image](https://github.com/lucasedferreira/cherry-tv/assets/37189868/2cb73dbd-27d8-47e7-b03c-540f299ccc2b)
+
 
 ## Prerequisites
 Before you begin, make sure you have the following:
