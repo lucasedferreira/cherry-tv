@@ -1,5 +1,9 @@
 # CherryTV
-> logo and home page screenshot
+https://choerry-tv.web.app/
+
+![logo-small](https://github.com/lucasedferreira/cherry-tv/assets/37189868/6ccdc225-aa6a-4741-8428-ca6ced93a608)
+![image](https://github.com/lucasedferreira/cherry-tv/assets/37189868/105c64a8-ed84-4375-8fda-c81f748212ce)
+
 
 This project showcases my frontend development skills by creating an enhanced streaming experience for YouTube videos.
 
