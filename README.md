@@ -12,6 +12,7 @@ This project showcases my frontend development skills by creating an enhanced st
  - Overview
  - Features
  - Project Roadmap
+ - Requirements
  - Data Modeling
  - Technology Stack
  - GitHub Actions
@@ -34,12 +35,50 @@ The main goal of this project is to demonstrate my ability to create a user-frie
 
 To keep track of project progress and prioritize features, I've created a Trello board. You can view and participate in the project's development by visiting the Trello board [here](https://trello.com/invite/b/fq6Q8Rc8/ATTI17e04a72c159294be1195984bfbb6498A33CCB1A/cherry-tv).
 
+
+## Requirements
+Functional Requirements
+| # | Description |
+|---|---|
+| 1 | The system should allow users to create accounts by providing basic information |
+| 2 | The system must be able to integrate with the YouTube API to fetch and import information about videos |
+| 3 | Users must be able to create custom tags |
+| 4 | There should be an option to mark videos as "watched" |
+
+Non Functional Requirements
+| # | Description |
+|---|---|
+| 1 | The system must offer fast response times, especially when conducting searches and loading playlists |
+| 2 | All data transmissions between the system and YouTube must be secure and protected |
+| 3 | The system must be compatible with a variety of devices and browsers to ensure a consistent experience |
+| 4 | The user interface must be intuitive and easy to use, even for users not familiar with technology |
+
+
 ## Data Modeling
 The data modeling for this project is based on a simple schema:
 
 - **User:** We store basic user information, such as name, email, and viewing preferences.
 - **Series:** The category that groups many videos.
 - **Videos:** We use the YouTube API to access video information. Each video is stored with details such as title, description, author, and video ID.
+
+Level 1 - Context
+
+![image](https://github.com/lucasedferreira/cherry-tv/assets/37189868/7c662683-963f-411f-a181-e4d22eed1f5c)
+
+Level 2 - Container
+
+![image](https://github.com/lucasedferreira/cherry-tv/assets/37189868/ffb10411-6f9b-4ffd-936c-a37e920eb6a2)
+
+Level 3 - Component
+
+![image](https://github.com/lucasedferreira/cherry-tv/assets/37189868/f080f58a-f359-4c5b-b9e5-bba35afcc5d0)
+
+Database
+
+![image](https://github.com/lucasedferreira/cherry-tv/assets/37189868/f588c0fa-45d4-4dc2-92de-3c296b3cc38c)
+
+
+
 
 ## Technology Stack
 This project was developed using the following technologies:
