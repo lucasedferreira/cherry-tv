@@ -7,6 +7,8 @@ https://choerry-tv.web.app/
 
 This project showcases my frontend development skills by creating an enhanced streaming experience for YouTube videos.
 
+In this MVP, simply access the link and enter your email (if it doesn't exist, an account will be created), register your videos with Tags and Groups and organize your entertainment.
+
 ## Summary
 
  - Overview
